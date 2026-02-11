@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FoodBridge</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1 data-i18n="welcome">Welcome to FoodBridge</h1>
+    <select id="languageSwitcher">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+      <option value="mr">मराठी</option>
+    </select>
+  </header>
+
+  <main>
+    <button onclick="startVoiceInput()">🎙️ Speak</button>
+    <div id="chatbot"></div>
+  </main>
+
+  <script src="scripts/i18n.js"></script>
+  <script src="scripts/chatbot.js"></script>
+  <script src="scripts/voice.js"></script>
+</body>
+</html>
